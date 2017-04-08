@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', 'Helvetica', sans-serif;
-    font-size: 15px;
+    font-size: 1em;
     line-height: 1.5;
     background-color: #ecf0f1;
 }
@@ -43,7 +43,6 @@ header #branding {
 header nav {
     float: right;
     margin-top: 40px;
-    font-size: 16px;
 }
 
 header li {
@@ -76,6 +75,7 @@ header a:hover {
 
 #banner p {
     font-size: 20px;
+    margin-bottom: 50px;
 }
 
 #newsletter{
@@ -85,6 +85,7 @@ header a:hover {
 
 #newsletter h2 {
     float: left;
+    width: 55%;
     color: #ffffff;
     margin-top: 35px;
 }
@@ -95,16 +96,17 @@ header a:hover {
 }
 
 #newsletter input[type="email"] {
-    padding: 10px;
+    padding: 10px 0px;
     width: 180px;
 }
 
 #newsletter button {
     border: none;
-    padding: 12px;
+    padding: 12px 0px;
     width: 80px;
     background-color: #d35400;
     color: #ffffff;
+    cursor: pointer;
 }
 
 #boxes {
@@ -198,8 +200,8 @@ footer {
         font-size: 40px;
     }
     
-    #banner p {
-        margin-bottom: 20px;
+    #newsletter {
+        padding-bottom: 45px;
     }
     
     #newsletter form {
@@ -212,7 +214,7 @@ footer {
     }
         
     #newsletter button {
-        margin: 5px 0px 20px 0px;
+        margin: 5px 0px 0px 0px;
     }
     
     #about p {
@@ -244,4 +246,40 @@ footer {
     #contact button {
         width: 90%;
         margin: 0px 20px 0px 0px;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    
+    header .container {
+        width: 100%;
+    }
+    
+    header #branding {
+        display: block;
+        width: 100%;
+    }
+    
+    header nav {
+        float: left;
+        margin: 20px 0px;
+        width: 100%;
+    }
+    
+    header li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    header a {
+        display: inline-block;
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    header a:hover {
+        background-color: #d35400;;
+    }
+    
 }
